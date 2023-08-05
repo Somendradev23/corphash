@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 a,
 p {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 h1,
@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 html,
@@ -78,10 +78,10 @@ hr {
 
 @keyframes back {
   from {
-    background-position-y: -300px ;
+    background-position-y: -300px;
   }
-  to{
-    background-position-y: 0px ;
+  to {
+    background-position-y: 0px;
   }
 }
 
@@ -95,12 +95,11 @@ nav {
 
 /* contact */
 .contact {
-
   padding-bottom: 20px;
 }
 
 /* Service-box */
-.Service-box {
+.Service-box, .our-work-box {
   margin-top: 20px;
   padding: 10px 10px 20px 10px;
   border: 1px solid rgb(117, 117, 243);
@@ -110,7 +109,7 @@ nav {
   min-height: 350px;
 }
 
-.Service-box:hover {
+.Service-box:hover , .our-work-box:hover {
   background-color: rgba(216, 216, 250, 0.616);
   transform: translateY(-15px);
 }
@@ -119,7 +118,7 @@ nav {
   height: 100px;
 }
 
-.Service-box a {
+.Service-box a , .our-work-box a {
   background-color: rgba(164, 164, 248, 0.466);
   border: 1px solid rgba(113, 113, 247, 0.616);
   color: rgb(73, 73, 247);
@@ -127,9 +126,15 @@ nav {
   padding: 8px;
 }
 
-.Service-box a:hover {
+.Service-box a:hover , .our-work-box a:hover {
   background-color: rgb(66, 66, 245);
   color: white;
+}
+
+.our-work-box img {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .workflow-box {
@@ -143,7 +148,7 @@ nav {
   border-radius: 50%;
   padding: 10px 15px;
   color: white;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .workflow-box img {
