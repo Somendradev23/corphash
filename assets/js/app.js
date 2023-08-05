@@ -1,10 +1,10 @@
 $(document).ready(function () {
   M.AutoInit();
 
-  $('.dropdown-trigger').dropdown({
-    hover : true,
-    coverTrigger :false,
-    constrainWidth : false,
+  $(".dropdown-trigger").dropdown({
+    hover: true,
+    coverTrigger: false,
+    constrainWidth: false,
   });
 
   // Progress
@@ -17,38 +17,39 @@ $(document).ready(function () {
     .not('[href="#0"]')
     .click(function (event) {
       // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-        location.hostname == this.hostname
-      ) {
+      if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
         // Figure out element to scroll to
         var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
         // Does a scroll target exist?
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function () {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            // $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-              //$target.focus(); // Set focus again
-            };
-          });
+          $("html, body").animate(
+            {
+              scrollTop: target.offset().top,
+            },
+            1000,
+            function () {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              // $target.focus();
+              if ($target.is(":focus")) {
+                // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                //$target.focus(); // Set focus again
+              }
+            }
+          );
         }
       }
     });
 
-
   // resposive owl
-  $('.workflow').owlCarousel({
+  $(".workflow").owlCarousel({
     loop: true,
     margin: 10,
     //responsiveClass:true,
@@ -64,7 +65,43 @@ $(document).ready(function () {
       },
       1000: {
         items: 4.2,
+      },
+    },
+  });
+});
+
+function saveContactInfo(form, event) {
+  event.preventDefault();
+
+  const email = form.email.value;
+  const name = form.name.value;
+  const msg = form.msg.value;
+
+  if (!email || !name || !msg) {
+    M.toast({ html: "Please fill all the fields" });
+    return;
+  }
+
+  const data = {
+    email,
+    name,
+    msg,
+  };
+
+  // SEND POST REQUEST TO SERVER WITH DATA USING AJAX
+  $.ajax({
+    type: "POST",
+    url: "/contact",
+    data: data,
+    success: function (response) {
+      if (response.success) {
+        M.toast({ html: `${response.message}` });
+      } else {
+        M.toast({ html: `${response.message}` });
       }
-    }
-  })
-})
+    },
+    error: function (error) {
+      M.toast({ html: "Something went wrong" });
+    },
+  });
+}
