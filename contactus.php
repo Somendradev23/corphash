@@ -10,9 +10,6 @@ $dbname = "u511675806_corphash";
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-header("Content-Type: application/json; charset=utf-8");
-
-
 // Check connection
 if ($conn->connect_error) {
     // return json type error response
@@ -20,8 +17,7 @@ if ($conn->connect_error) {
         "success" => false,
         "message" => "Connection failed: " . $conn->connect_error,
     ))
-    die("Connection failed: " . $conn->connect_error);
-
+    // die("Connection failed: " . $conn->connect_error);
 }
 
 // save data
