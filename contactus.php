@@ -16,7 +16,7 @@ if ($conn->connect_error) {
     echo json_encode(array(
         "success" => false,
         "message" => "Connection failed: " . $conn->connect_error,
-    ))
+    ));
     // die("Connection failed: " . $conn->connect_error);
 }
 
