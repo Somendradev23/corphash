@@ -91,7 +91,7 @@ function saveContactInfo(form, event) {
   // SEND POST REQUEST TO SERVER WITH DATA USING AJAX
   $.ajax({
     type: "POST",
-    url: "/contact",
+    url: "/contactus.php",
     data: data,
     success: function (response) {
       if (response.success) {
