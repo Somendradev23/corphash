@@ -75,9 +75,9 @@ function saveContactInfo(form, event) {
 
   const email = form.email.value;
   const name = form.name.value;
-  const msg = form.msg.value;
+  const message = form.msg.value;
 
-  if (!email || !name || !msg) {
+  if (!email || !name || !message) {
     M.toast({ html: "Please fill all the fields" });
     return;
   }
@@ -85,7 +85,7 @@ function saveContactInfo(form, event) {
   const data = {
     email,
     name,
-    msg,
+    message,
   };
 
   // SEND POST REQUEST TO SERVER WITH DATA USING AJAX
