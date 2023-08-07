@@ -95,13 +95,13 @@ function saveContactInfo(form, event) {
     data: data,
     success: function (response) {
       if (response.success) {
-        M.toast({ html: `${response.message}` });
+        M.toast({ html: `${response.message}`, classes: "green white-text" });
       } else {
-        M.toast({ html: `${response.message}` });
+        M.toast({ html: `${response.message}`, classes: "red white-text" });
       }
     },
     error: function (error) {
-      M.toast({ html: "Something went wrong" });
+      M.toast({ html: "Something went wrong" } , "red white-text");
     },
   });
 }
