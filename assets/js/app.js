@@ -102,7 +102,7 @@ function saveContactInfo(form, event) {
       }
     },
     error: function (error) {
-      M.toast({ html: "Something went wrong" } , "red white-text");
+      M.toast({ html: "Something went wrong" }, "red white-text");
     },
   });
 }
