@@ -93,6 +93,7 @@ function saveContactInfo(form, event) {
     type: "POST",
     url: "/contactus.php",
     data: data,
+    dataType: "json",
     success: function (response) {
       if (response.success) {
         M.toast({ html: `${response.message}`, classes: "green white-text" });
