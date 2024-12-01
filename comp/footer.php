@@ -6,12 +6,12 @@
 				<ul>
 					<li>
 						<i class="material-icons left">phone</i>
-						<a class="gray-text text-lighten-3" href="tel:+918953173300">+91 8953173300</a>
+						<a class="grey-text text-lighten-3" href="tel:+918953173300">+91 8953173300</a>
 					</li>
 					<br />
 					<li>
 						<i class="material-icons left">email</i>
-						<a class="gray-text text-lighten-3" href="mailto:contact@corphash.net">contact@corphash.net</a>
+						<a class="grey-text text-lighten-3" href="mailto:contact@corphash.net">contact@corphash.net</a>
 					</li>
 				</ul>
 			</div>
