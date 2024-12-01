@@ -33,7 +33,7 @@ hr {
   position: relative;
   margin-top: -64px;
   height: 100vh;
-  background: rgb(37, 37, 198);
+  background: rgb(34, 155, 230);
   background: linear-gradient(137deg, rgba(37, 37, 198, 1) 26%, rgba(0, 212, 255, 1) 100%);
 }
 
@@ -119,15 +119,15 @@ nav {
 }
 
 .Service-box a , .our-work-box a {
-  background-color: rgba(164, 164, 248, 0.466);
+  background-color: rgba(164, 164, 248, 0.291);
   border: 1px solid rgba(113, 113, 247, 0.616);
-  color: rgb(73, 73, 247);
+  color: rgb(73, 131, 246);
   border-radius: 5px;
   padding: 8px;
 }
 
 .Service-box a:hover , .our-work-box a:hover {
-  background-color: rgb(66, 66, 245);
+  background-color: rgb(66, 114, 245);
   color: white;
 }
 
