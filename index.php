@@ -33,7 +33,7 @@
 <!-- / / Our Work -->
 
 <!-- Progress -->
-<?php include('comp/progress.php') ?>
+<!-- <?php //include('comp/progress.php') ?> -->
 <!-- / / Progress -->
 
 <!-- contact -->
