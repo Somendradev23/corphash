@@ -6,12 +6,12 @@
 				<ul>
 					<li>
 						<i class="material-icons left">phone</i>
-						+91 8953173300
+						<a href="tel:+918953173300">+91 8953173300</a>
 					</li>
 					<br />
 					<li>
 						<i class="material-icons left">email</i>
-						contact@corphash.net
+						<a href="mailto:contact@corphash.net">contact@corphash.net</a>
 					</li>
 				</ul>
 			</div>
@@ -22,7 +22,7 @@
 					<li><a class="grey-text text-lighten-3" href="#!">Web App Development</a></li>
 					<li><a class="grey-text text-lighten-3" href="#!">Google Ads</a></li>
 					<li><a class="grey-text text-lighten-3" href="#!">IT Consultations</a></li>
-					<li><a class="grey-text text-lighten-3" href="#!">Custom Software Development</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Custom Software</a></li>
 					<li><a class="grey-text text-lighten-3" href="#!">Block Chain Development</a></li>
 				</ul>
 			</div>
