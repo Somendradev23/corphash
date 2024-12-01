@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4H3MVB9DRD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-4H3MVB9DRD");
-    </script>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/assets/images/www.svg" type="image/x-icon" />
@@ -47,7 +35,7 @@
                 </a>
               </li>
               <li><a href="/contact">Contact Us</a></li>
-              <li><a href="tel:+9125615672" class="btn orange">Get Quote</a></li>
+              <li><a href="tel:+918953173300" class="btn orange">Get Quote</a></li>
             </ul>
           </div>
         </div>

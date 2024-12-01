@@ -6,12 +6,12 @@
 				<ul>
 					<li>
 						<i class="material-icons left">phone</i>
-						+91 --
+						+91 8953173300
 					</li>
 					<br />
 					<li>
 						<i class="material-icons left">email</i>
-						corphash@gmail.com
+						contact@corphash.net
 					</li>
 				</ul>
 			</div>
@@ -41,7 +41,7 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			© 2020 Copyright Text
+			© 2024 Copyright
 			<a class="grey-text text-lighten-4 right" href="#!">CorpHash</a>
 		</div>
 	</div>
