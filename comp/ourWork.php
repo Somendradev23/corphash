@@ -7,10 +7,10 @@
 
 		<div class="col s12 m6 l4">
 			<div class="our-work-box center wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-				<img src="/assets/images/our_work/dishi_com_au.png" alt="" />
-				<h5>Dishi</h5>
-				<p>Unleashing AI-Powered Savings for Restaurants</p>
-				<a href="https://dishi.com.au" target="_blank">Visit</a>
+				<img src="/assets/images/our_work/meeting_room_booking.png" alt="" />
+				<h5>Meeting Room Booking</h5>
+				<p>A web application for meeting room booking</p>
+				<a href="https://meetingroombooking.vercel.app" target="_blank">Visit</a>
 			</div>
 		</div>
 	</div>
