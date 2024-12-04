@@ -3,7 +3,7 @@
 header("Content-Type: application/xml; charset=utf-8");
 
 // Define your website's base URL
-$base_url = "https://www.yourwebsite.com";
+$base_url = "https://corphash.net";
 
 // Define an array of URLs to include in the sitemap
 $pages = [
