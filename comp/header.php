@@ -65,7 +65,7 @@
       </a>
     </li>
     <li><a href="/contact">Contact Us</a></li>
-    <li><a href="tel:+9125615672" class="btn orange">Get Quote</a></li>
+    <li><a href="tel:+918953176600" class="btn orange">Get Quote</a></li>
   </ul>
 
   <!-- Dropdown Experties -->

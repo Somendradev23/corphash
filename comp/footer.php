@@ -6,7 +6,7 @@
 				<ul>
 					<li>
 						<i class="material-icons left">phone</i>
-						<a class="grey-text text-lighten-3" href="tel:+918953173300">+91 8953173300</a>
+						<a class="grey-text text-lighten-3" href="tel:+918953176600">+91 8953176600</a>
 					</li>
 					<br />
 					<li>
