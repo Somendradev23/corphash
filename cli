@@ -1,0 +1,22 @@
+<?php
+// cli.php
+
+if (php_sapi_name() !== 'cli') {
+    die("This script can only be run from the command line.");
+}
+
+echo "Simple PHP Spark Runner\n";
+
+$command = $argv[1] ?? null;
+
+switch ($command) {
+
+    case 'serve':
+        echo "Starting development server at http://localhost:8000\n";
+        exec('php -S localhost:8000 -t .');
+        break;
+
+    default:
+        echo "Unknown command. Available commands:  serve.\n";
+        break;
+}
