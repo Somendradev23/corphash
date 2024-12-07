@@ -9,10 +9,12 @@ include('./comp/header.php');
 
 <table class="striped responsive-table " style="width: 100%;">
     <thead>
-        <tr>Name</tr>
-        <tr>Email</tr>
-        <tr>Message</tr>
-        <tr>Time</tr>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Time</th>
+        </tr>
     </thead>
     <tbody>
 
