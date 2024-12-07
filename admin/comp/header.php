@@ -32,7 +32,7 @@
                     <a href="/" class="brand-logo">CorpHash</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="/about">Add Post</a></li>
+                        <li><a href="/admin/createBlog.php">Add Post</a></li>
                         <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>

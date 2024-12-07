@@ -1,20 +1,38 @@
 <?php
 
 include("./auth.php");
+include("../config/db.php");
 
-include('./comp/header.php') ?>
+include('./comp/header.php');
 
-<!DOCTYPE html>
-<html lang="en">
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<table class="striped responsive-table " style="width: 100%;">
+    <thead>
+        <tr>Name</tr>
+        <tr>Email</tr>
+        <tr>Message</tr>
+        <tr>Time</tr>
+    </thead>
+    <tbody>
 
-<body>
+        <?php
+        $stmt = $pdo->prepare("SELECT * FROM contactus");
+        $stmt->execute();
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            echo "<tr><td>" . $row['name'] . "</td><td>" . $row['email'] . "</td><td>" . $row['message'] . "</td><td>" . $row['insertDate'] . "</td></tr>";
+        }
+        ?>
 
-</body>
+    </tbody>
+</table>
 
-</html>
+<div class="mb-5"></div>
+
+
+
+
+<?php
+
+
+include('./comp/footer.php');
