@@ -1,10 +1,11 @@
 <?php
 
+include("./helper.php");
 
-$servername = "localhost";
-$username = "u616153323_corphash";
-$password = "qVL8~q7~";
-$dbname = "u616153323_corphash";
+$servername = processEnv("servername");
+$username = processEnv("username");
+$password = processEnv("password");
+$dbname = processEnv("username");
 
 try {
     $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -12,5 +13,3 @@ try {
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }
-
-include("./helper.php");
