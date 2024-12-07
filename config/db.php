@@ -1,6 +1,6 @@
 <?php
 
-include("./helper.php");
+include("helper.php");
 
 $servername = processEnv("servername");
 $username = processEnv("username");
