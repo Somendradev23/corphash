@@ -50,4 +50,4 @@ function loadEnv($file = '.env')
         $_ENV[$key] = $value;
     }
 }
-loadEnv();
+loadEnv("../.env");
